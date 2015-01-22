@@ -1,0 +1,41 @@
+========================================
+desstructuring assignment with object
+
+    a = "a"
+    b = "b"
+    obj3 = {a,b}
+
+    -----------------------------
+    var a, b, obj3;
+
+    a = "a";
+    b = "b";
+    obj3 = { a: a, b: b };
+
+
+========================================
+desstructuring assignment with array
+
+    [a,b] = ["a","b"]
+
+    -------------------------------
+    var a, b, _ref;
+
+    _ref = ["a", "b"];
+    a = _ref[0];
+    b = _ref[1];
+
+
+========================================
+complex assignment
+
+    a = "a"
+    obj = {a, b:"b", "c":{"a"}, d:a}
+
+    -----------------------------
+    var a, obj;
+    a = "a";
+
+    obj = { a: a, b: "b", "c": { "a": "a" }, d: a };
+
+

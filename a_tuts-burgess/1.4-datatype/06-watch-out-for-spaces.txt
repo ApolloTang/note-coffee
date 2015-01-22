@@ -1,0 +1,15 @@
+==================================
+space around operators
+
+    a = 1
+    b = 2
+    r1 = a+b
+    r2 = a +b
+    r3 = a+ b
+    -----------------
+    var a, b, r1, r2, r3;
+    a = 1;
+    b = 2;
+    r1 = a + b;
+    r2 = a(+b);   // <----- [!] expecting a to be a fucntion
+    r3 = a + b;

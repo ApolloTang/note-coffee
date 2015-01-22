@@ -1,0 +1,25 @@
+===================================
+"" does string interpolation
+
+    name = "Jeremy"
+    greeting = "Hello, #{name}!"
+    console.log(greeting)
+    - - - - - - - - - -
+    var greeting, name;
+    name = "Jeremy";
+    greeting = "Hello, " + name + "!";
+    console.log(greeting);
+
+====================================
+""" Here doc
+
+    hereDoc = """
+      1 line breaks will be inserted here ->
+      2 another line
+    """
+    -------------------------------------
+
+    hereDoc = "1 line breaks will be inserted here ->\n2 another line";
+
+
+
