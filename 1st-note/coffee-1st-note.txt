@@ -1,0 +1,17 @@
+
+don’t use a var declaration, it’s done for you.
+
+    no semicolons
+    no curly braces
+    no var keywords for variable definitions
+    omitt parentheses when calling functions
+    no function keyword 
+    no return statements
+
+
+awardMedals = function(first, second, other) {
+  others = 3 <= arguments.length ? __slice.call(arguments, 2) : [];
+  gold = first;
+  silver = second;
+  return rest = others;
+};

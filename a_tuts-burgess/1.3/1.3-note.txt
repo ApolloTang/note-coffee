@@ -1,0 +1,16 @@
+===============================
+04:57
+
+exec a coffee file
+$ coffee makeArray.coffee
+
+compile a coffee file
+$ coffee -c makeArray.coffee
+
+watch and compile a file
+$ coffee -cw makeArray.coffee
+
+using read eval print loop (REPL)
+$ coffee
+
+

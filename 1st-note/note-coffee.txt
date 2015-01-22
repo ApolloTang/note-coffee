@@ -1,0 +1,92 @@
+Functions 101
+
+
+:: create a string statement:
+
+    'hello, string!'
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    (function() {
+      'hello, string!';
+    }).call(this);
+
+
+:: Function with a name:
+
+    a = -> 'hello'
+    console.log a
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    (function() {
+        var a;
+        a = function() {
+            return 'hello';
+        };
+        console.log a();
+
+     }).call(this);
+
+
+:: anonymous function
+
+    -> 'Hello, functions!'
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    (function() {
+      (function() {
+        return 'Hello, functions!';
+      });
+    }).call(this);
+
+
+:: "->" implies a return of a function
+
+    the key word return is optional. It is omited unless you want to
+    break the flow of execution.
+
+    if you need to return nothing just use return by itself.
+
+        return
+
+        //  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+        (function() {
+          return;
+        }).call(this);
+
+
+
+::  This create a self execute function:
+
+    do -> 'Hello, functions!'
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    (function() {
+      (function() {
+        return 'Hello, functions!';
+      })();
+    }).call(this);
+
+
+:: Same as above
+
+    (-> 'Hello, functions!')()
+
+
+:: This is how you use console.log:
+
+    console.log do -> 'Hello, functions!'
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    (function() {
+        console.log(
+            ( function() { return 'Hello, functions!'; } )()
+        );
+    }).call(this);
+
+
