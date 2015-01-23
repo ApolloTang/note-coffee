@@ -1,0 +1,12 @@
+=======================================
+imediate invoked function expression
+
+    do ($ = "jQuery") ->
+      console.log $
+
+    - - - - - - - - - - - -
+    (function($) {
+        return console.log($);
+    })("jQuery");
+
+
