@@ -1,0 +1,30 @@
+= = = = = = = = = = = = = = = = = =
+
+
+    fn = (a) -> a || 'default value'
+    console.log fn()
+
+    - - - - - - - - - - - - - - - - -
+    var fn;
+    fn = function(a) {
+      return a || 'default value';
+    };
+    console.log(fn());
+
+
+= = = = = = = = = = = = = = = = = =
+coffee short hand to specify default value of formal paramter
+
+
+    fn = (a='default value') -> a
+    console.log fn()
+
+    - - - - - - - - - - - - - - - -
+    var fn;
+    fn = function(a) {
+      if (a == null) { a = 'default value'; }
+      return a;
+    };
+    console.log(fn());
+
+= = = = = = = = = = = = = = = = = =
