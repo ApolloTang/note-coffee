@@ -1,0 +1,61 @@
+============================================
+Normally you don't need parenthesis around
+actual parameter
+
+
+    fn_name = (a) -> console.log "Hello #{a}!"
+    fn_name 'apollo'
+
+    ------------------------------------------
+    fn_name = function(a) {
+        return console.log("Hello " + a + "!");
+    };
+    fn_name('apollo');
+
+
+============================================
+Parenthesis requires if actual paramter are absence
+
+
+    fn_name = (a) ->
+      a = a || "friend"
+      console.log "Hello #{a}!"
+
+    fn_name() ## <--- parenthesis required if actual parameter are
+              ##      absence
+
+    ------------------------------------------
+    var fn_name;
+    fn_name = function(a) {
+      a = a || "friend";
+      return console.log("Hello " + a + "!");
+    };
+    fn_name();
+
+============================================
+Parenthesis requires to access return property of a function
+
+    fn = () -> b: 'b'
+    console.log fn().b
+    -----------------------------
+    var fn;
+    fn = function() {
+      return { b: 'b' };
+    };
+    console.log(fn().b);
+
+
+============================================
+Parenthesis requries to perform operation on return value of a function
+
+
+    fn = () -> 1
+    console.log fn() + 1
+
+    -------------------------------------
+    var fn;
+    fn = function() { return 1; };
+    console.log(fn() + 1);
+
+
+
