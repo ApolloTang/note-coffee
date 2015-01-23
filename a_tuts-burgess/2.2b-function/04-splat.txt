@@ -1,0 +1,49 @@
+===================================
+splat in formal parameter
+
+
+fn = (a, b..., c, d) ->
+  #       ^^^---- splat
+  console.log(a)
+  console.log(b)
+  console.log(c)
+  console.log(d)
+
+fn("a", "b1", "b2", "c", "d")
+
+
+- - - - - - - - -
+$ coffee lab.coffee
+
+a
+[ 'b1', 'b2' ]
+c
+d
+
+
+===================================
+splat in actual parameter
+
+fn = (a, b, c, d) ->
+  console.log(a)
+  console.log(b)
+  console.log(c)
+  console.log(d)
+
+
+fn ["a", "b", "c"]..., "d"
+  #               ^^^--- splat
+
+fn "a", ["b", "c", "d"]...
+  #                    ^^^---splat
+  #                    array will be splited up and pass to
+  #                    respective formal parameter
+
+- - - - - - - - - - - - - - -
+$ coffee lab.coffee
+a
+b
+c
+d
+
+
