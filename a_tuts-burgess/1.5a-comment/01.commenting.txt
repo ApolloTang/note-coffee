@@ -1,0 +1,55 @@
+============================================
+line comment
+
+  # this is a comment
+  # will not show on output .js file
+
+  a = "a"  # this is a comment at the end of line
+  b = "b"  # will not shown on output .js file
+
+  -------------------------------------------
+  var a, b;
+  a = "a";
+  b = "b";
+
+
+
+============================================
+block comment
+
+  ###
+  #  -----------------
+  #  this is a multi-
+  #  line comment
+  #  will be shown in the output .js file
+  #  -----------------
+  ###
+
+  ------------------------------------------
+  /*
+   *  -----------------
+   *  this is a multi-
+   *  line comment
+   *  will be shown in the output .js file
+   *  -----------------
+   */
+
+============================================
+block comment
+
+  ###
+    -----------------
+    this is a multi-
+    line comment
+    leading "#" is not necessary
+    -----------------
+  ###
+
+  -------------------------------------
+  /*
+    -----------------
+    this is a multi-
+    line comment
+    leading "#" is not necessary
+    -----------------
+  */

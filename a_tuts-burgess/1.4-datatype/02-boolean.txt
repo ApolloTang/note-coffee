@@ -1,0 +1,16 @@
+=====================================
+boolean
+
+    _yes = yes
+    _no = no
+    _on = on
+    _off = off
+
+    ------------------------
+    var _no, _off, _on, _yes;
+
+    _yes = true;
+    _no = false;
+    _on = true;
+    _off = false;
+
